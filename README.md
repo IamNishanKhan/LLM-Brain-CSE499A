@@ -1,23 +1,23 @@
-# Behavior Tree Synthesis with LLMs
+# Behavior Tree Synthesis with LLMs - CSE499A
 
-A research project to advance robot programming through large language models (LLMs) by generating context-sensitive Behavior Trees (BTs) for ROS2 environments.
+A research project for CSE499A at North South University to advance robot programming through large language models (LLMs) by generating context-sensitive Behavior Trees (BTs) for ROS2 environments.
 
 ## Overview
-This project develops a prototype for intuitive robot programming, integrating six LLM-driven modules: **ChatBT** for conversational BT editing, **Multi-Modal Prompting** for vision-language BT synthesis, **Preference Memory** for personalized BTs, **Semantic Task Decomposition** for high-level command translation, **Real-Time Error Recovery** for robust execution, and **Collaborative Multi-Robot Coordination** for synchronized multi-robot tasks. Deployable in ROS2, it supports tasks like navigation and manipulation, enhancing usability and reliability.
+This project, developed for CSE499A at North South University, aims to create a prototype for intuitive and adaptive robot programming. It integrates six LLM-driven modules: **ChatBT** for conversational BT editing and debugging, **Multi-Modal Prompting** for generating BTs from text and visual inputs, **Preference Memory** for user-personalized BT synthesis, **Semantic Task Decomposition** for translating high-level commands into executable BTs, **Real-Time Error Recovery** for robust runtime failure handling, and **Collaborative Multi-Robot Coordination** for synchronized multi-robot task execution. Deployable in ROS2, the system targets complex tasks like indoor navigation, object manipulation, and multi-robot collaboration, enhancing usability, personalization, and reliability for both novice and expert users in academic and industrial applications.
 
 ## Features
-- **Conversational Interface**: Edit and debug BTs via natural language (ChatBT).
-- **Context-Aware Synthesis**: Generate BTs from text and visual inputs (Multi-Modal Prompting).
-- **Personalization**: Adapt BTs to user preferences (Preference Memory).
-- **Task Decomposition**: Translate abstract commands into executable BTs.
-- **Error Recovery**: Detect and resolve runtime failures with explanations.
-- **Multi-Robot Support**: Coordinate multiple robots for collaborative tasks.
-- **Evaluation**: Validated via Gazebo simulations and TurtleBot3 testing.
+- **Conversational Interface**: Enables natural language-based BT editing and debugging (ChatBT).
+- **Context-Aware Synthesis**: Generates BTs using combined language and visual inputs (Multi-Modal Prompting).
+- **Personalized BTs**: Adapts BT generation to user preferences (Preference Memory).
+- **Task Decomposition**: Converts abstract commands into structured BTs (Semantic Task Decomposition).
+- **Error Recovery**: Detects and resolves runtime errors with natural language explanations (Real-Time Error Recovery).
+- **Multi-Robot Coordination**: Supports synchronized task execution across multiple robots (Collaborative Multi-Robot Coordination).
+- **Evaluation Plan**: Validation through Gazebo simulations and real-world testing on platforms like TurtleBot3.
 
 ## Installation
 1. Clone the repository:
    ```bash
-   https://github.com/IamNishanKhan/LLM-Brain-CSE499A
+   git clone https://github.com/IamNishanKhan/LLM-Brain-CSE499A.git
    ```
 2. Install dependencies:
    - ROS2 Humble
@@ -29,13 +29,10 @@ This project develops a prototype for intuitive robot programming, integrating s
    source /opt/ros/humble/setup.bash
    colcon build
    ```
-4. Run the prototype:
+4. Run the prototype (once implemented):
    ```bash
    ros2 run bt_synthesis main
    ```
-
-## Dataset
-A comprehensive dataset of natural language commands, visual inputs, and BTs will be available in `/data` upon project completion.
 
 ## Contributing
 Contributions are welcome! Please submit issues or pull requests for bug fixes, enhancements, or new features.
@@ -44,4 +41,4 @@ Contributions are welcome! Please submit issues or pull requests for bug fixes, 
 MIT License
 
 ## Acknowledgments
-Developed for CSE499A at North South University under Dr. Mohammad Ashrafuzzaman Khan.
+Developed for CSE499A at North South University under the supervision of Dr. Mohammad Ashrafuzzaman Khan.
