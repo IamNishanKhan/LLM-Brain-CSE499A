@@ -17,7 +17,7 @@ This project develops a prototype for intuitive robot programming, integrating s
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/behavior-tree-synthesis.git
+   https://github.com/IamNishanKhan/LLM-Brain-CSE499A
    ```
 2. Install dependencies:
    - ROS2 Humble
@@ -44,4 +44,4 @@ Contributions are welcome! Please submit issues or pull requests for bug fixes, 
 MIT License
 
 ## Acknowledgments
-Developed for CSE465 at North South University under Dr. Mohammad Ashrafuzzaman Khan. Targeting publications at ICRA, IROS, and HRI.
+Developed for CSE499A at North South University under Dr. Mohammad Ashrafuzzaman Khan.
