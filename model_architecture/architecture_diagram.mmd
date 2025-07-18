@@ -1,0 +1,26 @@
+flowchart TD
+    A[User] -->|Natural Language Command| B(LLM Intent Classifier)
+    B -->|Intent| C[Blackboard]
+    C -->|State, Preferences| D[BT Execution Engine]
+    D -->|Tick| E[Main Behavior Tree]
+    E -->|Condition/Action/PreferenceSequence| F[Robot Actions]
+    C -->|Preferences| G[PreferenceSequence Node]
+    G -->|Ordered Actions| F
+    subgraph BT Core
+        E
+        G
+    end
+    subgraph LLM Integration
+        B
+    end
+    subgraph Nodes
+        F
+    end
+    subgraph Data
+        C
+    end
+    subgraph Engine
+        D
+    end
+    B -.->|Preference Feedback| C
+    F -.->|User Feedback| C 
